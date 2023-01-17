@@ -5,7 +5,6 @@ import random
 
 class Play:
     def __init__(self):
-
         tweaks = {
             "trees": (403,252),
             "leaves": (398,330),
@@ -16,7 +15,7 @@ class Play:
             "inc_rate":(971,400),
             "birds":(962,467),
         }
-        
+        p.click(691,377)
         while True:
             for i in range(0, 200, 20):
                 p.click((690, 300 + i))
@@ -26,6 +25,7 @@ class Play:
             except:
                 pass
             time.sleep(0.001)
+            
             if k.is_pressed("e"):
                 break
             else:
